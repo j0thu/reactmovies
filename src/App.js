@@ -22,7 +22,10 @@ function App() {
 
   return(
     <>
-      <div>
+      <div className="movie-container">
+        <header >
+          <input className="search" type="text" placeholder="Search..." />
+        </header>
         {movies.length>0 && movies.map((movie) => <Movie key={movie.id} {...movie} /> )} {/*spreading the movies ...movies to access individual features in component*/}
       </div>
     </>
